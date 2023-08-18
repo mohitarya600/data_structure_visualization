@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linked List Visualization</title>
+<link rel="stylesheet" href="css\linked-list.css"><style>
+ 
+</style>
+</head>
+<body>
+  <h1>Linked List Operations</h1>
+
+  <div class="background-video">
+    <video autoplay muted loop>
+      <source src="files\25.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+<div class="controls">
+  <button onclick="generateRandomLinkedList()">Generate Random List</button>
+  <input type="number" id="insertValue" placeholder="Insert Value">
+  <button onclick="insertNode()">Insert Node</button>
+  <input type="number" id="insertIndex" placeholder="Insert Index">
+  <button onclick="insertNodeAtIndex()">Insert at Index</button>
+  <input type="number" id="deleteValue" placeholder="Delete by Value">
+  <button onclick="deleteNodeByValue()">Delete by Value</button>
+  <input type="number" id="deleteIndex" placeholder="Delete by Index">
+  <button onclick="deleteNodeByIndex()">Delete by Index</button>
+</div>
+<div class="linked-list-container">
+  <div class="linked-list" id="linked-list"></div>
+</div>
+<script src="js\linked-list.js"></script>
+</body>
+</html>

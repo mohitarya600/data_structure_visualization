@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website Title</title>
+  <link href="css\index.css" rel="stylesheet">
+</head>
+
+<body>
+  <video autoplay muted loop>
+    <source src="files\home.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <img src="images\logo.png" style="height:50px;  position: absolute;
+  top: 8px; left: 16px; ;">
+
+
+  <nav>
+
+
+    <a href="index.html">Home</a>
+    <a href="#about" class="popup-link" id="about-popup-button">About</a>
+
+  </nav>
+  <section id="home">
+    <!-- Your home page content goes here -->
+  </section>
+  <section id="about">
+    <!-- Your about page content goes here -->
+  </section>
+  <!-- About pop-up overlay -->
+
+  <div class="about-popup-overlay" id="about-popup-overlay">
+    <div class="about-popup-content">
+
+      <img src="images\WhatsApp Image 2023-08-14 at 7.40.24 AM.jpeg" height="200px" alt="This is an image">
+
+      <h1>Designed With ❤️ By Mohit Arya</h1>
+      <h5>Gmail </h5>
+      <h4> mohitarya600@gmail.com </h4>
+      <button class="login-button" onclick="closeAboutPopup()">Close</button>
+    </div>
+  </div>
+
+
+  <div class="content-box">
+    <h1>Understanding Data <br>Structures is now easy <br>with Visualization</h1>
+    <a href="page1.html"><button class="login-button">Get Start</button></a>
+  </div>
+
+  </div>
+  <script src="js\index.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queue Visualization</title>
+  <link rel="stylesheet" href="css\queue.css">
+</head>
+
+<body>
+  <div class="background-video">
+    <video autoplay muted loop>
+      <source src="files\11.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="content">
+      <div class="queue-container">
+
+        <div class="button-container">
+          <h1>Queue Operations</h1>
+          <button onclick="enqueue()">Enqueue</button>
+          <button onclick="dequeue()">Dequeue</button>
+          <input type="text" id="manualInput" placeholder="Enter value">
+          <button onclick="manualEnqueue()">Add Manually</button>
+        </div>
+        <div id="queue" class="queue"></div>
+      </div>
+      <script src="js\queue.js"></script>
+    </div>
+
+
+
+
+</body>
+
+</html>

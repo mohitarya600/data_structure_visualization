@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Visualization</title>
+  <link rel="stylesheet" href="css\searching.css">
+</head>
+
+<body>
+
+
+  <div class="background-video">
+    <video autoplay muted loop>
+      <source src="files\5.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="content">
+      <div id="container">
+        <h1>Search Visualization</h1>
+        <p>Choose the type of search:</p>
+        <button onclick="generateRandom()">Linear Search (Random Numbers)</button>
+        <button onclick="generateSorted()">Binary Search (Sorted Numbers)</button>
+        <div id="array"></div>
+        <div>
+          <input type="number" id="searchValue" placeholder="Enter a number to search">
+          <button id="searchButton" onclick="search()">Search</button>
+        </div>
+        <p id="searchResult"></p>
+      </div>
+      <script src="js\searching.js"></script>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
